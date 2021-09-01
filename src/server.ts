@@ -6,14 +6,6 @@ import { router } from "./routes"
 
 const app = express()
 
-// app.get("/test", (request, response) => {
-//     return response.send("Olá NLW")
-// })
- 
-// app.post("/test-post", (request, response)=> {
-//     return response.send("Olá Post NLW")
-// })
-
 app.use(express.json())
 
 app.use(router)
@@ -31,9 +23,3 @@ app.use((err: Error, request: Request, response: Response, next: NextFunction) =
 })
 
 app.listen(3000, () => console.log('Server is running') )
-
-//Código1 #together
-//Código2 #unidade
-//Código3 #embuscadeevolução
-//Código4 #legacy
-//Código5 #
